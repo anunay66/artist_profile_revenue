@@ -1,9 +1,18 @@
 
+import os
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
 
+
 application = Flask(__name__)
+
+
+
+application.secret = os.urandom(12)
+
+
+
 model = pickle.load(open('modell.pkl', 'rb'))
 
 @application.route('/')
