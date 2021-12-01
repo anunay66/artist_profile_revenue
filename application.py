@@ -9,7 +9,7 @@ application = Flask(__name__)
 
 
 
-application.secret = os.urandom(12)
+application.secret = os.environ.get('SECRET')
 
 
 
