@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Exp</title>
+ 
+</head>
+<style>
+body {
+  background-color: rgb(25, 20, 20);
+}
+
+h1 {
+  color: rgb(225, 210, 220);
+  margin-left: 40px;
+}
+</style>
+ <div class="login">
+	<h1><font size="10" face="Century Gothic"> famcloud</b></font></b></h1>
+<h1><font size="15" face="Century Gothic"><p style="text-align:center;> &nbsp; &nbsp; &nbsp; &nbsp; nobel</p></b></font></b></h1>
+<p style="text-align:right; font size="14" face="Century Gothic"> ARTIST PROFILE</p>
+
+
+
+
+<head>
+<style>
+img {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<p><img src="https://drive.google.com/uc?export=view&id=1jw41aBRFSYrSlcsow-1St0vjFJHMP60Z" alt="Pineapple" style="width:500px;height:480px;margin-right:115px;">
+Try it.</p>
+
+
+ 
+
+
+
+<font size="10" face="Century Gothic">predict your revenue!</b></font></b>
+
+
+
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	
+<input type="text" name="active(months)" placeholder="active(months)" required="required" />
+        <input type="text" name="followers" placeholder="followers" required="required" />
+		<input type="text" name="uniqueplays" placeholder="uniqueplays" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   
+
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
